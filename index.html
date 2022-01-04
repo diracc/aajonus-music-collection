@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aajonus Music Collection</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav><a href="about">About</a></nav>
+            <img class="logo" src="image.svg" alt="Logo">
+        </header>
+        <div class="playlist striped">
+            <div class="playlist-head">
+                <h2>Playlist</h2>
+                <input id="filter" type="text" placeholder="Filter tapes...">
+                <svg id="clear" class="hidden" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="15" height="15"><path d="M1.5 1.5l12 12m-12 0l12-12" stroke="currentColor"></path></svg>
+            </div>
+            <div id="player-wrapper" class="hidden">
+                <iframe width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div id="controls">
+                    <h3><span>Songlist</span> <svg id="close" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="15" height="15"><path d="M1.5 1.5l12 12m-12 0l12-12" stroke="currentColor"></path></svg></h3>
+                    <ul id="song-list"></ul>
+                </div>
+            </div>
+            <div id="items"></div>
+        </div>
+    </div>
+
+    <script src="js/tapes.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
