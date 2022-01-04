@@ -84,8 +84,8 @@ main img {
 
 .logo {
     display: block;
-    margin: -1em auto 0;
-    width: 25em;
+    margin: -.5em auto 0;
+    width: 12em;
 }
 
 .playlist {
