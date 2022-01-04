@@ -249,7 +249,7 @@ main img {
     #controls {
         flex-grow: 1;
         max-height: 19.6875em;
-        overflow: scroll;
+        overflow-y: scroll;
     }
 
     #song-list li {
