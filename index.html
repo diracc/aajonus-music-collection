@@ -24,7 +24,7 @@
                 <svg id="clear" class="hidden" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="15" height="15"><path d="M1.5 1.5l12 12m-12 0l12-12" stroke="currentColor"></path></svg>
             </div>
             <div id="player-wrapper" class="hidden">
-                <iframe width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div id="player"></div>
                 <div id="controls">
                     <h3><span>Songlist</span> <svg id="close" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="15" height="15"><path d="M1.5 1.5l12 12m-12 0l12-12" stroke="currentColor"></path></svg></h3>
                     <ul id="song-list"></ul>
@@ -34,6 +34,7 @@
         </div>
     </div>
 
+    <script src="https://www.youtube.com/iframe_api"></script>
     <script src="js/tapes.js"></script>
     <script src="js/main.js"></script>
 </body>

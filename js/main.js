@@ -3,11 +3,14 @@ const $playlist = document.getElementsByClassName("playlist")[0];
 const $items = document.getElementById("items");
 const $filter = document.getElementById("filter");
 const $playerWrapper = document.getElementById("player-wrapper");
-const $player = document.getElementsByTagName("iframe")[0];
+const $player = document.getElementById("player");
 const $songList = document.getElementById("song-list");
 const $close = document.getElementById("close");
 const $clear = document.getElementById("clear");
 
+let player;
+let currentTapeIndex;
+let currentSongIndex;
 // Workaround for correct stripes (1/3)
 let nthStripe = 1;
 
@@ -17,7 +20,7 @@ let nthStripe = 1;
 $filter.value = "";
 
 // Render the playlist
-tapes.forEach(function (tape) {
+tapes.forEach(function (tape, index) {
     const $item = createElement("div", "item");
     const $cover = createElement("img", "cover", {
         src: `covers/${tape[4]}`,
@@ -32,13 +35,14 @@ tapes.forEach(function (tape) {
     const $released = createElement("div", "released", { innerText: tape[3] });
     const $length = createElement("span", "length", { innerText: tape[2] });
     
-    $cover.addEventListener("click", selectAlbum.bind(tape));
-    $album.addEventListener("click", selectAlbum.bind(tape));
+    $cover.addEventListener("click", selectAlbum.bind(tape[5]));
+    $album.addEventListener("click", selectAlbum.bind(tape[5]));
 
     appendChildren($infos, $artist, $album, $released);
     appendChildren($item, $cover, $infos, $length);
     $items.appendChild($item);
     tape.$element = $item;
+    tape[5].index = index;
 });
 
 
@@ -67,43 +71,98 @@ function appendChildren(parent, ...children) {
     });
 }
 
+function onYouTubeIframeAPIReady() {
+    player = new YT.Player($player, {
+        height: "315",
+        width: "560",
+        playerVars: {
+            "playsinline": 1,
+            "autoplay": 1
+        },
+        events: {
+            "onStateChange": onPlayerStateChange
+        }
+    });
+}
+
+function onPlayerStateChange(e) {
+    if (e.data === YT.PlayerState.ENDED) {
+        const tape = tapes[currentTapeIndex][5];
+
+        if (!tape.id && currentSongIndex + 1 < tape.list.length) {
+            tape.list[++currentSongIndex][2].click();
+        } else {
+            if (currentTapeIndex + 1 < tapes.length) {
+                const nextTapeIndex = ++currentTapeIndex;
+                currentTapeIndex = undefined;
+                currentSongIndex = 0;
+                selectAlbum.apply(tapes[nextTapeIndex][5]);
+            }
+        }
+    }
+}
+
+// function determineSongIndex(songlist, time) {
+//     let songIndex = 0;
+
+//     songlist.forEach(function (song, index) {
+//         if (song[0] >= time) {
+//             return;
+//         }
+        
+//         songIndex = index;
+//     });
+
+//     return songIndex;
+// }
+
 function selectAlbum(e) {
-    e.preventDefault();
-    const tape = this[5];
-    const id = tape.id || tape.list[0][0];
-    updatePlayer(id);
-    renderSongList(tape.list, tape.id);
+    e && e.preventDefault();
+    updatePlayer(getId(this));
+    renderSongList(this);
     $playerWrapper.classList.remove("hidden");
     window.scrollTo({ top: 0, behavior: "smooth" });
+    currentTapeIndex = this.index;
+    currentSongIndex = 0;
 }
 
-function updatePlayer(id, time) {
-    time = time ? `&start=${time}` : "";
-    $player.src = `https://www.youtube-nocookie.com/embed/${id}?autoplay=1${time}`;
+function getId(tape) {
+    return tape.id || tape.list[0][0];
 }
 
-function renderSongList(list, id) {
+function updatePlayer(id, time = 0) {
+    if (currentTapeIndex === undefined || getId(tapes[currentTapeIndex][5]) !== id) {
+        player.loadVideoById(id, time);
+    } else {
+        player.seekTo(time);
+    }
+}
+
+function renderSongList(tape, id) {
     $songList.innerHTML = ""; // Remove current playlist
-    list.forEach(function (song) {
+    tape.list.forEach(function (song, index) {
         const $li = createElement("li", "");
         const $a = createElement("a", "song", { innerText: song[1] });
-        $a.dataset.start = id ? song[0] : 0;
-        $a.dataset.id = id || song[0];
+        $a.dataset.start = tape.id ? song[0] : 0;
+        $a.dataset.id = tape.id || song[0];
+        $a.dataset.index = index;
         $a.href = "#";
         $li.appendChild($a);
         $songList.appendChild($li);
+        song[2] = $a;
     });
 }
 
 function selectSong(e) {
     e.preventDefault();
     if (e.target.className === "song") {
+        currentSongIndex = +e.target.dataset.index;
         updatePlayer(e.target.dataset.id, +e.target.dataset.start);
     }
 }
 
 function closePlayer() {
-    $player.src = "";
+    player.stopVideo();
     $playerWrapper.classList.add("hidden");
 }
 
