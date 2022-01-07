@@ -1,40 +1,38 @@
 const tapes = [
     [ "Fleedwood Mac", "Rumours", "41:15", "1977", "rumours.png", {
-        id: "uzEt9cATWFw",
         list: [
-            [ 0, "Second Hand News" ],
-            [ 176, "Dreams" ],
-            [ 434, "Never Going Back Again" ],
-            [ 568, "Don't Stop" ],
-            [ 761, "Go Your Own Way" ],
-            [ 986, "Songbird" ],
-            [ 1186, "Silver Springs" ],
-            [ 1478, "The Chain" ],
-            [ 1746, "I Don't Want to Know" ],
-            [ 1944, "Oh Daddy" ],
-            [ 2182, "Gold Dust Woman" ]
+            [ "SLlYUlS_Awo", "Second Hand News" ],
+            [ "swJOIjjW69U", "Dreams" ],
+            [ "0i3ZfrVY9iU", "Never Going Back Again" ],
+            [ "0hGhl7ki3HM", "Don't Stop" ],
+            [ "MTIkFwMuiTw", "Go Your Own Way" ],
+            [ "y9Hqn8x6a8s", "Songbird" ],
+            [ "tqOLTlZ_CcM", "Silver Springs" ],
+            [ "FhgFtXESdPk", "The Chain" ],
+            [ "MLs17vZqrBg", "I Don't Want to Know" ],
+            [ "abticFBnddk", "Oh Daddy" ],
+            [ "-Ti1b-RRBjI", "Gold Dust Woman" ]
         ]
     } ],
     [ "Ron Steward", "Unplugged... and seated", "1:10:02", "1993", "unplugged-and-seated.jpg", {
-        id: "UbepM7_P1LE",
         list: [
-            [ 0, "Hot Legs" ],
-            [ 238, "Tonight's the Night (Gonna Be Alright)" ],
-            [ 513, "Handbangs and Gladrags" ],
-            [ 776, "Cut Across Shorty" ],
-            [ 1076, "Every Picture Tells a Story" ],
-            [ 1364, "Maggie May" ],
-            [ 1704, "Reason to Believe" ],
-            [ 1970, "People Get Ready" ],
-            [ 2252, "Have I Told You Lately" ],
-            [ 2500, "Tom Traubert's Blues (Waltzing Matilda)" ],
-            [ 2780, "The First Cut is Deepest" ],
-            [ 3028, "Mandolin Wind" ],
-            [ 3355, "Highgate Shuffle" ],
-            [ 3590, "Stay With Me" ],
-            [ 3917, "Having a Party" ]
-            // [ 0, "Gasoline Alley" ],
-            // [ 0, "Forever Young" ]
+            [ "a8Qu82HPD5E", "Hot Legs" ],
+            [ "c3IiiB1RhKs", "Tonight's the Night (Gonna Be Alright)" ],
+            [ "W4AaoM92CHY", "Handbangs and Gladrags" ],
+            [ "PnQxbfmNSPg", "Cut Across Shorty" ],
+            [ "EX1zfCcfBEg", "Every Picture Tells a Story" ],
+            [ "KkqQhW5kPFg", "Maggie May" ],
+            [ "DD7Mlm8lWtE", "Reason to Believe" ],
+            [ "CGRQbOasJOs", "People Get Ready" ],
+            [ "XAGaejsOhls", "Have I Told You Lately" ],
+            [ "ahGaOCF9-3k", "Tom Traubert's Blues (Waltzing Matilda)" ],
+            [ "QQYWAUxS8hE", "The First Cut is Deepest" ],
+            [ "XPbjk6TycMc", "Mandolin Wind" ],
+            [ "oUiOajjEc6Q", "Highgate Shuffle" ],
+            [ "hiuSfWYKGoA", "Stay With Me" ],
+            [ "2bdUZisMUro", "Having a Party" ],
+            [ "DRoVpMYAQeY", "Gasoline Alley" ],
+            [ "ZWnCzaOvpjM", "Forever Young" ]
         ]
     } ],
     [ "Geri Allen, Charlie Haden, Paul Motian", "In The Year Of The Dragon", "48:03", "1989", "in-the-year-of-the-dragon.jpg", {
@@ -82,30 +80,28 @@ const tapes = [
         ]
     } ],
     [ "Mannheim Steamroller", "Fresh Aire V", "34:38", "1983", "fresh-aire-v.jpg", {
-        id: "U7bxJj-9XbA",
         list: [
-            [ 0, "Lumen" ],
-            [ 89, "Escape from the Atmosphere" ],
-            [ 727, "Dancin' in the Stars" ],
-            [ 1040, "Z-Row Gravity" ],
-            [ 1270, "Creatures of Levania" ],
-            [ 1501, "Earthrise/Return" ],
-            [ 2039, "The Storm" ]
+            [ "zypeLoBk7xk", "Lumen" ],
+            [ "E6Br8eNw9Mo", "Escape from the Atmosphere" ],
+            [ "nXpvgBFPTeY", "Dancin' in the Stars" ],
+            [ "goKlj6pOT2k", "Z-Row Gravity" ],
+            [ "eJy9crURw_k", "Creatures of Levania" ],
+            [ "8hbZEfn66qA", "Earthrise/Return" ],
+            [ "W_n-O4HSvXg", "The Storm" ]
         ]
     } ],
     [ "Mariah Carey", "Music Box", "41:37", "1993", "music-box.png", {
-        id: "VaK5PWvunbY",
         list: [
-            [ 0, "Dreamlover" ],
-            [ 233, "Hero"],
-            [ 490, "Anytime You Need a Friend" ],
-            [ 746, "Music Box" ],
-            [ 1042, "Now That I Know" ],
-            [ 1300, "Never Forget You" ],
-            [ 1525, "Without You" ],
-            [ 1739, "Just to Hold You Once Again" ],
-            [ 1978, "I've Been Thinking About You" ],
-            [ 2265, "All I Ever Wanted" ],
+            [ "CqBtS6BIP1E", "Dreamlover" ],
+            [ "DGnXL4pvdBg", "Hero"],
+            [ "Li6vpAMmfw0", "Anytime You Need a Friend" ],
+            [ "cPSbcAT883A", "Music Box" ],
+            [ "66PAnkQmumc", "Now That I Know" ],
+            [ "jTD2_Y-YqOE", "Never Forget You" ],
+            [ "6VY8ZxcDh1s", "Without You" ],
+            [ "kqqYW3hQKBo", "Just to Hold You Once Again" ],
+            [ "rANIfOyKqDA", "I've Been Thinking About You" ],
+            [ "9_T1t8tEO-U", "All I Ever Wanted" ],
         ]
     } ],
     [ "George Michael", "Listen Without Prejudice Vol. 1", "48:34", "1990", "listen-without-prejudice-vol-1.jpg", {
@@ -155,38 +151,37 @@ const tapes = [
         ]
     } ],
     [ "Michael Jackson", "HIStory: Past, Present and Future, Book I", "	2:28:51", "1995", "history-past-present-and-future-book-1.jpg", {
-        id: "S8Qrj9Gtzy0",
         list: [
-            [ 0, "Billie Jean" ],
-            [ 293, "The Way You Make Me Feel" ],
-            [ 591, "Black or White" ],
-            [ 847, "Rock With You" ],
-            [ 1067, "She's Out Of My Life" ],
-            [ 1284, "Bad" ],
-            [ 1532, "I Just Can't Stop Loving You (ft. Siedah Garret)" ],
-            [ 1784, "Man in the Mirror" ],
-            [ 2103, "Thriller" ],
-            [ 2460, "Beat It" ],
-            [ 2719, "The Girl Is Mine (ft. Paul McCartney)" ],
-            [ 2940, "Remember the Time" ],
-            [ 3180, "Don't Stop 'Til You Get Enough" ],
-            [ 3544, "Wanna Be Startin' Somethin'" ],
-            [ 3907, "Heal the World" ],
-            [ 4292, "Scream (ft. Janet Jackson)" ],
-            [ 4572, "They Don't Care About Us" ],
-            [ 4860, "Stranger In Moscow" ],
-            [ 5198, "This Time Around (ft. Notorius B.I.G.)" ],
-            [ 5464, "Earth Song" ],
-            [ 5866, "D.S." ],
-            [ 6166, "Money" ],
-            [ 6437, "Come Together" ],
-            [ 6680, "You Are Not Alone" ],
-            [ 7025, "Childhood" ],
-            [ 7293, "Tabloid Junkie" ],
-            [ 7573, "2 Bad (ft. Shaquille O'Neal)" ],
-            [ 7859, "HIStory" ],
-            [ 8286, "Little Susie" ],
-            [ 8633, "Smile" ]
+            [ "7CTJcHjkq0E", "Billie Jean" ],
+            [ "T3FG_YQOW5k", "The Way You Make Me Feel" ],
+            [ "YP3W-E0OamU", "Black or White" ],
+            [ "aCjxP58Ydik", "Rock With You" ],
+            [ "_ScQ2GILk9E", "She's Out Of My Life" ],
+            [ "IEGIWRpnpBU", "Bad" ],
+            [ "HX6aHf7aRHA", "I Just Can't Stop Loving You (ft. Siedah Garret)" ],
+            [ "BbnV1x7cHjs", "Man in the Mirror" ],
+            [ "sO4vI8P88NM", "Thriller" ],
+            [ "WlTlUseVt7E", "Beat It" ],
+            [ "oQG0Dyfugg4", "The Girl Is Mine (ft. Paul McCartney)" ],
+            [ "q9YyV-4mM94", "Remember the Time" ],
+            [ "DkjwyAk2GRw", "Don't Stop 'Til You Get Enough" ],
+            [ "4Ibtio5coYQ", "Wanna Be Startin' Somethin'" ],
+            [ "xBDhYI8T9kI", "Heal the World" ],
+            [ "8k1yj46xH24", "Scream (ft. Janet Jackson)" ],
+            [ "-_OPJ2d86kE", "They Don't Care About Us" ],
+            [ "afi78zv0QHk", "Stranger In Moscow" ],
+            [ "px-hIf_Ca30", "This Time Around (ft. Notorius B.I.G.)" ],
+            [ "gbAd62jzrNI", "Earth Song" ],
+            [ "zLzhPY6-WWs", "D.S." ],
+            [ "Wtk02qIeHmI", "Money" ],
+            [ "Xp_iORAu5q4", "Come Together" ],
+            [ "02dMNQxwy48", "You Are Not Alone" ],
+            [ "sZXSU1inQQs", "Childhood" ],
+            [ "x4jlxvtVGAI", "Tabloid Junkie" ],
+            [ "1jfy9Ek4IyE", "2 Bad (ft. Shaquille O'Neal)" ],
+            [ "Z_dznlX3EAA", "HIStory" ],
+            [ "xG_MREFDJgc", "Little Susie" ],
+            [ "tQTHBlf-Tvw", "Smile" ]
             
         ]
     } ],
@@ -246,42 +241,40 @@ const tapes = [
         ]
     } ],
     [ "Mannheim Steamroller", "Fresh Aire II", "35:47", "1977", "fresh-aire-ii.jpg", {
-        id: "V3Et_W4T7Lk",
         list: [
-            [ 0, "Chorale" ],
-            [ 36, "The First Door – Interrupted Thought" ],
-            [ 122, "The Second Door – The Ugly Head of Greed" ],
-            [ 244, "The Third Door – Pride" ],
-            [ 394, "The Fourth Door – Relaxation" ],
-            [ 624, "The Fifth Door – Frenetic Energy" ],
-            [ 803, "The Sixth Door – Nostalgia" ],
-            [ 894, "Door Seven – Thermal Inversion" ],
-            [ 1012, "Fantasy" ],
-            [ 1095, "Interlude V" ],
-            [ 1311, "Velvet Tear" ],
-            [ 1476, "A Shade Tree" ],
-            [ 1774, "Toota Lute" ],
-            [ 1944, "Going to Another Place" ]
+            [ "dhQitzB8rIE", "Chorale" ],
+            [ "0huc5lcBRW8", "The First Door – Interrupted Thought" ],
+            [ "Fz6pGShlp_s", "The Second Door – The Ugly Head of Greed" ],
+            [ "bwjZg1M6qJ8", "The Third Door – Pride" ],
+            [ "b161_O85UAk", "The Fourth Door – Relaxation" ],
+            [ "nBUfYUizFM4", "The Fifth Door – Frenetic Energy" ],
+            [ "IUKCzw7Bl7w", "The Sixth Door – Nostalgia" ],
+            [ "PxwnHe1ofKA", "Door Seven – Thermal Inversion" ],
+            [ "myy-yKjTSJ4", "Fantasy" ],
+            [ "J1WgO2L9hxo", "Interlude V" ],
+            [ "lL3cJRhYlDc", "Velvet Tear" ],
+            [ "ZXSFplvj75g", "A Shade Tree" ],
+            [ "GyNObL9VrjU", "Toota Lute" ],
+            [ "NCiSFZqlApw", "Going to Another Place" ]
         ]
     } ],
     [ "Mannheim Steamroller", "Fresh Aire III", "33:47", "1979", "fresh-aire-iii.jpg", {
-        id: "6wL2VvmR5MM",
         list: [
-            [ 0, "Toccata" ],
-            [ 276, "Small Wooden Bach'ses" ],
-            [ 437, "Amber" ],
-            [ 604, "Mere Image" ],
-            [ 1015, "Morning" ],
-            [ 1189, "Interlude 6" ],
-            [ 1360, "The Cricket" ],
-            [ 1524, "The Sky" ],
-            [ 1825, "Midnight on a Full Moon" ]
+            [ "xTJchAGQC04", "Toccata" ],
+            [ "jE-bFpqrntA", "Small Wooden Bach'ses" ],
+            [ "4aWxEwSyEa0", "Amber" ],
+            [ "bupQ2zm", "Mere Image" ],
+            [ "Xo8Dp-1gTrI", "Morning" ],
+            [ "tNtXmM6A2Xo", "Interlude 6" ],
+            [ "RAQ1D8X_M7Q", "The Cricket" ],
+            [ "xZPoXOChaE4", "The Sky" ],
+            [ "zycRnPZyUAc", "Midnight on a Full Moon" ]
         ]
     } ],
     [ "Bernie Krause", "Equator", "32:00", "1986", "equator.jpg", {
         id: "pL8xuN53r-w",
         list: [
-            [ 0, "Still Life at the Equator " ],
+            [ 0, "Still Life at the Equator" ],
             [ 978, "Sea Dance" ]
         ]
     } ],
@@ -651,35 +644,25 @@ const tapes = [
         ]
     } ],
     [ "Vivaldi", "Four Seasons", "42:00", "1725", "four-seasons.jpg", {
-        id: "GRxofEmo3HA",
         list: [
-            [ 0, "Spring: I. Allegro" ],
-            [ 215, "Spring: II. Largo" ],
-            [ 361, "Spring: III. Allegro pastorale" ],
-            [ 626, "Summer: I. Allegro non molto" ],
-            [ 948, "Summer: II. Adagio e piano - Presto a forte" ],
-            [ 1075, "Summer: III. Presto" ],
-            [ 1257, "Autumn: I. Allegro" ],
-            [ 1578, "Autumn: II. Adagio molto" ],
-            [ 1745, "Autumn: III. Allegro" ],
-            [ 1965, "Winter: I. Allegro non molto" ],
-            [ 2174, "Winter: II. Largo" ],
-            [ 2313, "Winter: III. Allegro" ]
+            [ "l-dYNttdgl0", "Spring" ],
+            [ "VG53Lg9jfvw", "Summer" ],
+            [ "1JEJ4Is6fTg", "Autumn" ],
+            [ "aYyvevVQB38", "Winter" ]
         ]
     } ],
     [ "", "Flashdance (soundtrack)", "36:52", "1983", "flashdance-soundtrack.jpg", {
-        id: "JpqpPtzt9X4",
         list: [
-            [ 4, "Irene Cara - Flashdance... What a Feeling" ],
-            [ 241, "Shandi Sinnamon - He's a Dream" ],
-            [ 450, "Helen St. John - Love Theme from Flashdance" ],
-            [ 659, "Karen Kamon - Manhunt" ],
-            [ 817, "Joe Esposito - Lady, Lady, Lady" ],
-            [ 1070, "Laura Branigan - Imagination" ],
-            [ 1290, "Donna Summer - Romeo" ],
-            [ 1487, "Cycle V - Seduce Me Tonight" ],
-            [ 1701, "Kim Carnes - I'll Be Here Where the Heart Is" ],
-            [ 1977, "Michael Sembello - Maniac" ]
+            [ "tKcjZSh5xs0", "Irene Cara - Flashdance... What a Feeling" ],
+            [ "YOgejpn6CII", "Shandi Sinnamon - He's a Dream" ],
+            [ "J8li5NvUnvs", "Helen St. John - Love Theme from Flashdance" ],
+            [ "EErzzIeFsok", "Karen Kamon - Manhunt" ],
+            [ "KKYBugzHH2c", "Joe Esposito - Lady, Lady, Lady" ],
+            [ "H60aaeH58vI", "Laura Branigan - Imagination" ],
+            [ "fojfzjkbKKw", "Donna Summer - Romeo" ],
+            [ "ZRPuDwH4Dh0", "Cycle V - Seduce Me Tonight" ],
+            [ "UloymAa1ZIM", "Kim Carnes - I'll Be Here Where the Heart Is" ],
+            [ "VDpmH_tS3kc", "Michael Sembello - Maniac" ]
         ]
     } ],
     [ "The Pointer Sisters", "Break Out", "43:38", "1983", "break-out.jpg", {
