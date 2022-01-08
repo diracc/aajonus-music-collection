@@ -19,6 +19,12 @@ let nthStripe = 1;
 // clear the input field
 $filter.value = "";
 
+// load the IFrame Player API code
+// const $script = document.createElement("script");
+// const $firstScriptTag = document.getElementsByTagName("script")[0];
+// $script.src = "https://www.youtube.com/iframe_api";
+// $firstScriptTag.parentNode.insertBefore($script, $firstScriptTag);
+
 // Render the playlist
 tapes.forEach(function (tape, index) {
     const $item = createElement("div", "item");
@@ -118,7 +124,7 @@ function onPlayerStateChange(e) {
 
 function selectAlbum(e) {
     e && e.preventDefault();
-    updatePlayer(getId(this));
+    updatePlayer(getId(this), 0);
     renderSongList(this);
     $playerWrapper.classList.remove("hidden");
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -130,11 +136,11 @@ function getId(tape) {
     return tape.id || tape.list[0][0];
 }
 
-function updatePlayer(id, time = 0) {
-    if (currentTapeIndex === undefined || getId(tapes[currentTapeIndex][5]) !== id) {
-        player.loadVideoById(id, time);
-    } else {
+function updatePlayer(id, time) {
+    if (time !== 0) {
         player.seekTo(time);
+    } else {
+        player.loadVideoById(id, time);
     }
 }
 
