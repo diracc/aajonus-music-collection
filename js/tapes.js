@@ -365,7 +365,7 @@ const tapes = [
             [ "KrGi8ODOWR0", "My Hometown" ]
         ]
     } ],
-    [ "The Pointer Sisters", "So Excited!", "", "1982", "so-excited.jpg", {
+    [ "The Pointer Sisters", "So Excited!", "33:21", "1982", "so-excited.jpg", {
         list: [
             [ "I57hkclh3kk", "I'm So Excited" ],
             [ "jzcB5U9hksw", "See How the Love Goes" ],
