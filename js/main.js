@@ -147,7 +147,7 @@ function updatePlayer(id, time) {
 function renderSongList(tape) {
     $songList.innerHTML = ""; // Remove current playlist
     tape.list.forEach(function (song, index) {
-        const $li = createElement("li", "");
+        const $li = document.createElement("li");
         const $a = createElement("a", "song", { innerText: song[1] });
         $a.dataset.start = tape.id ? song[0] : 0;
         $a.dataset.id = tape.id || song[0];
